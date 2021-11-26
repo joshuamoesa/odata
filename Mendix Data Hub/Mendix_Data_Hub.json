@@ -1,0 +1,283 @@
+{
+  "info": {
+    "_postman_id": "99ed4ea9-63a3-439b-bc50-a59b24ba28c8",
+    "name": "Mendix Data Hub",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "customerservice metadata",
+      "_postman_id": "d1de09e9-0792-427f-956f-9861b4445e70",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://joshuacustomerserviceapp-sandbox.mxapps.io/odata/JoshuaCustomerODataService/v1/$metadata"
+      },
+      "response": []
+    },
+    {
+      "name": "customerservice filter firstName",
+      "_postman_id": "14d90dee-3438-4a27-87bc-296407171483",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://joshuacustomerserviceapp-sandbox.mxapps.io/odata/JoshuaCustomerODataService/v1/$metadata"
+      },
+      "response": []
+    },
+    {
+      "name": "countries/Countries",
+      "_postman_id": "1d90b755-6e7c-4945-97d8-532a52e20bba",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://willemh.mendixcloud.com/odata/countries/v1/Countries"
+      },
+      "response": []
+    },
+    {
+      "name": "countries/Countries ExchangeRates",
+      "_postman_id": "1b3ae701-4ef7-4fd7-8dd6-ca94dd0bb342",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://willemh.mendixcloud.com/odata/countries/v1/ExchangeRates"
+      },
+      "response": []
+    },
+    {
+      "name": "countries/Countries$count",
+      "_postman_id": "fccdafb9-47b7-4949-b5b1-ba7f57077511",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://willemh.mendixcloud.com/odata/countries/v1/Countries/$count"
+      },
+      "response": []
+    },
+    {
+      "name": "countries/Countries $filter=Name+eq+'Albania'",
+      "_postman_id": "648c6e28-b1b0-4580-88e9-d186db8318ff",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://willemh.mendixcloud.com/odata/countries/v1/Countries/?$filter=Name+eq+'Albania' ",
+          "protocol": "https",
+          "host": [
+            "willemh",
+            "mendixcloud",
+            "com"
+          ],
+          "path": [
+            "odata",
+            "countries",
+            "v1",
+            "Countries",
+            ""
+          ],
+          "query": [
+            {
+              "key": "$filter",
+              "value": "Name+eq+'Albania' "
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "countries/Countries $filter=Name+eq+'Albania' Copy",
+      "_postman_id": "f457db60-312e-4ac6-b1b9-b7fce8114166",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://willemh.mendixcloud.com/odata/countries/v1/Countries/?$select=Name, Population&$filter=Name+eq+'Albania' ",
+          "protocol": "https",
+          "host": [
+            "willemh",
+            "mendixcloud",
+            "com"
+          ],
+          "path": [
+            "odata",
+            "countries",
+            "v1",
+            "Countries",
+            ""
+          ],
+          "query": [
+            {
+              "key": "$select",
+              "value": "Name, Population"
+            },
+            {
+              "key": "$filter",
+              "value": "Name+eq+'Albania' "
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "countries/Countries $filter=Name+ne+'Albania'",
+      "_postman_id": "49d51d7e-b2b4-4d4f-ab04-c0a58efa1288",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://willemh.mendixcloud.com/odata/countries/v1/Countries/?$filter=Name+ne+'Albania' &$orderby=Name",
+          "protocol": "https",
+          "host": [
+            "willemh",
+            "mendixcloud",
+            "com"
+          ],
+          "path": [
+            "odata",
+            "countries",
+            "v1",
+            "Countries",
+            ""
+          ],
+          "query": [
+            {
+              "key": "$filter",
+              "value": "Name+ne+'Albania' "
+            },
+            {
+              "key": "$orderby",
+              "value": "Name",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "countries/Countries $filter=Population+gt+'1001'",
+      "_postman_id": "9da84549-5666-48f8-99c7-f365e0ee305c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://willemh.mendixcloud.com/odata/countries/v1/Countries/?$filter=Population+gt+'1001'",
+          "protocol": "https",
+          "host": [
+            "willemh",
+            "mendixcloud",
+            "com"
+          ],
+          "path": [
+            "odata",
+            "countries",
+            "v1",
+            "Countries",
+            ""
+          ],
+          "query": [
+            {
+              "key": "$filter",
+              "value": "Population+gt+'1001'"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "countries/Countries $filter=Population+lt+'1001'&$orderby=Name",
+      "_postman_id": "8ba05f42-8eaa-45ee-b4e5-c8b8fc2b2e34",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://willemh.mendixcloud.com/odata/countries/v1/Countries/?$filter=Population+lt+'1001'&$orderby=Name",
+          "protocol": "https",
+          "host": [
+            "willemh",
+            "mendixcloud",
+            "com"
+          ],
+          "path": [
+            "odata",
+            "countries",
+            "v1",
+            "Countries",
+            ""
+          ],
+          "query": [
+            {
+              "key": "$filter",
+              "value": "Population+lt+'1001'"
+            },
+            {
+              "key": "$orderby",
+              "value": "Name"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DH API",
+      "_postman_id": "80df52ee-049f-4c7e-abb1-969541361c67",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": null
+      },
+      "response": []
+    },
+    {
+      "name": "DH API Copy",
+      "_postman_id": "b39209b8-77b7-4f8e-9e5e-acd580bc4a7e",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": null
+      },
+      "response": []
+    }
+  ]
+}
