@@ -54,7 +54,7 @@
 			"response": []
 		},
 		{
-			"name": "Products specific MainCategoryName Copy",
+			"name": "MainCategories",
 			"id": "0ec4873d-7eaa-457b-a56d-0d6b3027cc1a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -85,6 +85,19 @@
 						}
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "SubCategories",
+			"id": "91252299-2153-45e1-863f-283a333fa2e7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_PROD_MAN_SRV/SubCategories"
 			},
 			"response": []
 		}
