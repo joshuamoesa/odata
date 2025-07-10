@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "c7605deb-bf4e-49a8-adb1-cae0b70698c8",
+		"name": "SAP Gateway - Demo System (ES5)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "$metadata",
+			"id": "7fb1d59a-799c-48e6-b964-a7dd204f7f9e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_PROD_MAN_SRV/$metadata"
+			},
+			"response": []
+		},
+		{
+			"name": "Products specific MainCategoryName",
+			"id": "1e034734-6ff6-4416-94b4-8fb436a81e3f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_PROD_MAN_SRV/Products?$filter=substringof('Computer Components', MainCategoryName)",
+					"protocol": "https",
+					"host": [
+						"sapes5",
+						"sapdevcenter",
+						"com"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"EPM_REF_APPS_PROD_MAN_SRV",
+						"Products"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "substringof('Computer Components', MainCategoryName)"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products specific MainCategoryName Copy",
+			"id": "0ec4873d-7eaa-457b-a56d-0d6b3027cc1a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_PROD_MAN_SRV/Products?$filter=substringof('Computer Components', MainCategoryName)",
+					"protocol": "https",
+					"host": [
+						"sapes5",
+						"sapdevcenter",
+						"com"
+					],
+					"path": [
+						"sap",
+						"opu",
+						"odata",
+						"sap",
+						"EPM_REF_APPS_PROD_MAN_SRV",
+						"Products"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "substringof('Computer Components', MainCategoryName)"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": {
+			"username": "P2004604066",
+			"password": "P@ssw0rd!"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "44ef3ba2-bd31-4b91-a059-67c1aa016119",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "31ca27e3-b708-4338-a7e0-ca3325580392",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
