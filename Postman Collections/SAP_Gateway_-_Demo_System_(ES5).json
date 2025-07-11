@@ -28,7 +28,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_PROD_MAN_SRV/Products?$filter=substringof('Computer Components', MainCategoryName)",
+					"raw": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_PROD_MAN_SRV/Products?$filter=substringof('Computer Components', MainCategoryName) or substringof('Mouse', SubCategoryName)",
 					"protocol": "https",
 					"host": [
 						"sapes5",
@@ -46,7 +46,7 @@
 					"query": [
 						{
 							"key": "$filter",
-							"value": "substringof('Computer Components', MainCategoryName)"
+							"value": "substringof('Computer Components', MainCategoryName) or substringof('Mouse', SubCategoryName)"
 						}
 					]
 				}
@@ -62,29 +62,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": {
-					"raw": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_PROD_MAN_SRV/Products?$filter=substringof('Computer Components', MainCategoryName)",
-					"protocol": "https",
-					"host": [
-						"sapes5",
-						"sapdevcenter",
-						"com"
-					],
-					"path": [
-						"sap",
-						"opu",
-						"odata",
-						"sap",
-						"EPM_REF_APPS_PROD_MAN_SRV",
-						"Products"
-					],
-					"query": [
-						{
-							"key": "$filter",
-							"value": "substringof('Computer Components', MainCategoryName)"
-						}
-					]
-				}
+				"url": "https://sapes5.sapdevcenter.com/sap/opu/odata/sap/EPM_REF_APPS_PROD_MAN_SRV/MainCategories"
 			},
 			"response": []
 		},
